@@ -8,56 +8,84 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 <body>
-    <header>
+    <div class="ligneGauche"></div>
+    <div class="ligneDroite"></div>
+    <header id="header">
+        
         <!-- navigation -->
-        <nav>
-            <a href="index.html"></a>
-            <img src="./assets/Logos/logohome.png" alt="logo">
+        <nav class="container">
+            <a href="index.html">
+                <img class="logohome" src="./assets/Logos/logohome.png" alt="logo">
+            </a>    
+            <ul>
+                <li ><a href="index.html">HOME</a></li>
+            </ul>
         </nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-        </ul>
+    
         <!-- section 1-HOME -->
         <main>
-            <section>
-                <p>Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit.</p>
-                <h2>Il est Batman. </h2>
-                <!-- Buton en première partie -->
-            <div>
-                <a href="#BATMAN AU CINEMA">VOIR LE HEROS</a>
-                <a href="#NÉMÉSIS">LES ADVERSAIRES</a>
+            <section id="hero">
+        <div class="container" >
+            <div class="contenue">
+                <p class="texte">Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit.</p>
+                <h2 class="titre">Il est Batman. </h2>
+                <!-- Button en première partie -->
+                <div>
+                    <a class="btn" href="#BATMAN AU CINEMA">VOIR LE HEROS</a>
+                    <a class= "btn" href="#NÉMÉSIS">LES ADVERSAIRES</a>
+                </div>
             </div>
-            <!-- flèche -->
-                <img src="assets/Logos/flèche_down_header.png" alt=" flèche down">
-            </section>
+        </div>
+            <!-- flèche  scroll bar-->
+        <div class="scroll-bar">
+            <div>
+                <a href="#header"></a>
+                <img class="logo" src="assets/Logos/logo_bat_flèche.png" alt="bat flèche haut">
+            </div>
+            <!-- logo social média -->
+            <div class="logo-social">
+                <img src="assets/Logos/icon_facebook.png" alt="fb">
+                <img src="assets/Logos/icon_ig.png" alt="insta">
+                <img src="assets/Logos/icon_tw.png" alt="twitter">
+            </div>
+            <div>
+                <a href="#footer"></a>
+                <img class="logo-flèche" src="assets/Logos/logo_bat_flèche_2.png" alt=" bat flèche down">
+            </div>
+        </div>
+             </section>
         </main>
-    </header>
-    
-    
+</header>
+<!-- ffin header -->
+<div>
+    <img class="flèche-down" src="assets/Logos/flèche_down_header.png" alt="flèche down">
+</div>
     <!-- section 2-BATMAN AU CINEMA -->
-    <section>
-        <div>
-            <h1>BATMAN AU CINÉMA</h1>
+    <section id="batman au cinema">
+        <div class="container">
+            <h2 class="titre">BATMAN AU CINÉMA</h2>
             <p>Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le comic book Detective Comics en 1939. Batman se différencie de Superman, alors héros majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples acteurs d’interpréter l’homme chauve-souris. Voici les trois derniers : </p>
-            <div>
-                <img src="assets/Illustrations/Bathome2.png" alt="Robert Pattinson  ">
+            <div class="batman-personnage">
                 <div>
-                    <h3>Robert Pattinson  </h3>
-                    <P>(2022) </P>
+                    <img src="assets/Illustrations/Bathome2.png" alt="Robert Pattinson  ">
+                    <div>
+                        <h3>Robert Pattinson  </h3>
+                        <P>(2022) </P>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <img src="assets/Illustrations/Bathome3.png" alt="Christian Bale">
                 <div>
-                    <h3>Christian Bale</h3>
-                    <P>(2006 - 2008 - 2012) </P>
-                </div>
-            </div>
-            <div>
-                <img src="assets/Illustrations/Bathome4.png" alt="Ben Affleck ">
+                    <img src="assets/Illustrations/Bathome3.png" alt="Christian Bale">
+                    <div>
+                        <h3>Christian Bale</h3>
+                        <P>(2006 - 2008 - 2012) </P>
+                    </div>
+                 </div>
                 <div>
-                    <h3>Ben Affleck </h3>
-                    <p>20016- 2017/2020 – 2023 </p>
+                    <img src="assets/Illustrations/Bathome4.png" alt="Ben Affleck ">
+                    <div>
+                        <h3>Ben Affleck </h3>
+                        <p>20016- 2017/2020 – 2023 </p>
+                    </div>
                 </div>
             </div>
         </div> 
@@ -66,12 +94,13 @@
     
     <!-- section 3-NÉMÉSIS  -->
     <section>
-        <div>
-            <h1>NÉMÉSIS </h1>
+        <div class="container">
+            <h2 class="titre">NÉMÉSIS</h2>
             <div>
                 <img src="assets/Illustrations/Bathome13.png" alt=" logo batman">
             </div>
             <p>Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League il aura l’occasion de se mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmi les derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve : </p>
+           <div class="nemesis-personnage">
             <div>
                 <img src="assets/Illustrations/Bathome5.png" alt="The Riddler - Paul Dano">
                 <div>
@@ -94,15 +123,17 @@
                         <P>(2022)</P>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
     
     
     <!-- section 4-ALLIES  -->
     <section>
-        <div>
-            <h1>ALLIES </h1>
+        <div class="container">
+            <h2 class="titre">ALLIES </h2>
             <P>Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le premier numéro des aventures de l’homme chauve-souris en 1940. Tantôt ennemie tantôt alliée la jeune femme fatale fera tourner la tête de Batman à maintes reprises. Du côté de la police, Bruce pourra compter sur l’aide infaillible de James Gordon, “Jim”, qui désire lui aussi nettoyer sa ville de la criminalité qui y règne. </P>
+            <div class="alliésPersonnage">
             <div>                         
                 <img src="assets/Illustrations/Bathome9.png" alt="Alfred Pennyworth - Michael Cain ">
                 <div>
@@ -124,14 +155,15 @@
                     <P>(2014-2019)</P>
                 </div>
             </div>
+            </div>
         </div>
     </section>
 
    
     <!-- section 5-JUSTICE LEAGUE -->
     <section>
-        <div>
-            <h1>JUSTICE LEAGUE</h1>
+        <div class="container">
+            <h2 class="titre">JUSTICE LEAGUE</h2>
             <P>Lorsque la Terre est menacée les plus grands super-héros s’allient pour la protéger. Ils doivent cependant apprendre à se faire confiance mutuellement et à faire équipe ce qui ne sera pas chose aisée. Ensemble ils forment la Justice League, les plus grands super-héros de la Terre, ceux vers qui le monde entier se tourne lorsque les menaces extraterrestres ou surnaturelles menacent son existence.</P>
             <div>                          
                 <img src="assets/Illustrations/Bathome11.png" alt=" JUSTICE LEAGUE ">
