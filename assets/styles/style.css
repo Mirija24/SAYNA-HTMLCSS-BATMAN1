@@ -48,29 +48,15 @@ body{
     font-family:SpaceGrotesk-Regular;
     font-weight: 500;
 }
-/* .ligneGauche{
-    width: 2px;
-    height: 100%;
-    position: fixed;
-    left: 7.5% ;
-    border-left: 4px solid var(--color-border); */
-/* } */
-/* .ligneDroite{
-    width: 2px;
-    height: 100%;
-    position: fixed;
-    left: 7.5% ;
-    border-left: 4px solid var(--color-border);
-} */
+
 /* design navigation */
 nav{
-    display: flex;
-    padding: 20px;
+    display:flex;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
     background-position:top center;
-    
-}
+    }
 ul{
     list-style: none;
 }
@@ -106,14 +92,12 @@ nav ul li a:active{
     justify-content: center;
     background-position: top center;
     background-repeat: no-repeat;
-   
     background-color: var(--color-border);
   }
   .logohome{
     width: 100px;
     height: auto;
-    
-  }
+     }
   
   /* design scroll bar */
   #header .scroll-bar{
@@ -122,9 +106,9 @@ nav ul li a:active{
     flex-direction: column;
     align-items: center;
     position: fixed;
-    right: 38px;
+    right: 20px;
     top: 200px;
-    width: 200px;
+    width: 100px;
     z-index: 999;
   }
  #header .logo-social img{
@@ -152,17 +136,12 @@ nav ul li a:active{
     justify-content: center;
     padding-top:150px ;
     }
-/* #header .texte{
-   /* font-size: 21px; */
-    /* } */
 #header .titre{
     display: block;
     margin: 20px 0;
     font-family: "spaceGrotesk-bold";
     font-size: 30px;
-    /* font-weight: 700;
-    padding-top: 10px; */
-}
+    }
 /* design button */
 #header .btn{
     font-family: 'rajdhani';
@@ -171,7 +150,7 @@ nav ul li a:active{
     padding: 10px 5Opx;
     text-decoration: none;
     display: inline-block;
-    background: linear-gradient(70deg,rgba(245, 22O, 180, 0.2) 40% ,rgba(140, 0, 8, 0.2)60% );
+    background: linear-gradient(80deg,rgba(245, 22O, 180, 0.2) 40% ,rgba(140, 0, 8, 0.2)60% );
     box-shadow: black 10px 10px 60px ;
     margin: 20px;
 }
@@ -185,19 +164,50 @@ nav ul li a:active{
     background: linear-gradient(50deg,var(--color-gray-02)40%,var(--color-red-02)60%);
 }
     /* design flèche down */
-    .flèche{
+    .flèche-down{
         display: block;
-        margin: auto;
-        width: 80px;
-        padding-top: 320px;
+        margin: 0 auto;
+        margin-top: 40px;
     }
 
     /* design de la partie 2-BATMAN au cinéma */
+    #batman-au-cinema{
+        margin-top:  40px;
+    }
+    #batman-au-cinema .titre{
+        font-weight: bold;
+        margin:30px 0;
+    }
+    #batman-au-cinema .description{
+        margin-bottom: 40px;
+        text-align: justify;
+        width:80% ;
+        font-size: 21px;
+    }
     .batman-personnage{
         display: flex;
         justify-content: space-between;
     }
+    .perso-info{
+        text-align: center;
+        /* pour les sections 2 3 4 */
+
+    }
     /* design de la partie 3- NEMESIS */
+    #NÉMÉSIS{
+        margin-top:  40px;
+    }
+    #NÉMÉSIS .titre{
+        font-weight: bold;
+        margin:30px 0;
+    }
+    #NÉMÉSIS .description{
+        margin-bottom: 40px;
+        text-align: justify;
+        width:80% ;
+        font-size: 21px;
+    }
+
     .nemesis-personnage{
         display: flex;
         justify-content: space-between;
@@ -205,10 +215,161 @@ nav ul li a:active{
     }
 
     /* design de la partie 4-ALLIES */
+    #allies{
+        margin-top:  40px;
+    }
+    #allies .titre{
+        font-weight: bold;
+        margin:30px 0;
+    }
+    #allies .description{
+        margin-bottom: 40px;
+        text-align: justify;
+        width:80% ;
+        font-size: 21px;
+    }
+
     .alliésPersonnage{
         display: flex;
         justify-content: space-between;
 }
+/* design de la partie 5-JUSTICE LEAGUE */
+#JUSTICE{
+    margin-top:  40px;
+}
+#JUSTICE.titre{
+    font-weight: bold;
+    margin:30px 0;
+}
+#JUSTICE .description{
+    margin-bottom: 40px;
+    text-align: justify;
+    width:80% ;
+    font-size: 21px;
+}
+/* section MULTIMEDIA */
+#multimédia .slider-multimedia{
+    display: flex;
+    width: 60%;
+    margin:auto;
+    padding:40px;
+    
+}
+#multimédia .slider-image{
+    width: 100%;
+}
+#multimédia .slider-text{
+    padding: 15px;
+    background: linear-gradient(50deg,var(--color-gray-02)40%,var(--color-red-02)60%);
+    border-top-right-radius: 20px ;
+    border-bottom-right-radius: 20px;
     
 
+}
+#multimédia p{
+    font-size: 12px;
+}
+#multimédia span{
+    color:var(--color-yellow-01)
+}
+#multimédia button{
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+#multimédia .right{
+    right: -85%;
+}
+/* design formulaire */
+#contact{
+    padding:70px 0;
+}
+#contact .form{
+    width: 50%;
+    margin: 0 auto;
+}
+#contact h2{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+#contat .titre{
+    display: block;
+    margin: 28px 0;
+    
+}
+#contact .form input[type='email'],textarea,span.fréquence{
+    display: block;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    width:80%;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    padding: 10px 0;
+}
+#contact .icon img{
+    transform:rotate(90deg);
+    right: -550px;
+    position: relative;
+    width: 20px;
+    }
+#contact .news{
+    margin: 15px 0;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+}
+.btn-groupe{
+    padding: 10px;
+    display: flex;
+    justify-content:space-around;
+}
+.form input[type='radio']{
+    opacity: 0;
+}
+.btn-groupe label{
+    cursor: pointer;
+}
+input[type='submit']{
+    width: 230px;
+    margin: 25px auto;
+    display: block;
+    padding: 15px 0;
+    cursor: pointer;
+}
+/* setion citation */
+#citations{
+    margin:90px;
+}
+#citations .citation-carte{
+     text-align:center ;
+     width: 50%;
+     margin: auto;
+}
+#citations .citation-auteur{
+    padding-top: 30px;
+    font-size:  14px ;
+    font-family: 'rajdhani';
+}
+#citations .guillemet-close{
+    float: right;
+}
+/* footer */
+footer{
+    margin-top: 160px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 10px;
+}
 
+footer .social-footer{
+    text-align: center;
+    margin:50px;
+    justify-content: space-between;
+    }
+footer .is{
+    justify-content: space-between;
+    padding: 15px;
+}
